@@ -1,0 +1,146 @@
+.map {
+  width: 100%;
+  position: relative;
+  height: Calc(100vh - 212px);
+}
+
+.course-actions a {
+  display: inline-block;
+  overflow: hidden;
+  height: 40px;
+  border: none;
+  line-height: 26px;
+  font-size: 1.1rem;
+  /*white-space: nowrap;*/
+  padding: 7px 28px 0px 82px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.course-action-enroll {
+  color: white;
+  background-color: #2E5BFF;
+}
+
+.course-actions a:hover, .course-actions a:focus {
+  text-decoration: none;
+}
+
+.course-action-enroll:hover, .course-action-resume:hover, .course-action-external:hover, .course-action-reactivate:hover, .course-action-proctoring:hover {
+  background-color: #549ccb;
+}
+
+.who {
+  color: #fff;
+  background-color: #0b72b5;
+  border-color: #d9d9d9;
+  background-image: url('/assets/images/who.png');
+  background-repeat: no-repeat;
+  background-position: 17px;
+  padding-left: 60px;
+  margin-bottom: 0px !important;
+  vertical-align: middle;
+}
+
+.form-icon {
+  color: #fff;
+  background-color: #0b72b5;
+  border-color: #d9d9d9;
+  background-image: url('/assets/images/test.svg');
+  background-repeat: no-repeat;
+  background-position: 17px;
+  padding-left: 60px;
+  margin-bottom: 0px !important;
+  vertical-align: middle;
+}
+
+.information {
+  position: absolute;
+  /*left: 0;*/
+  bottom: 0;
+  z-index: 9999;
+}
+
+.information-head {
+  padding: 30px;
+}
+
+.cross {
+  margin-left: auto;
+  cursor: pointer;
+  color: red;
+  float: right;
+}
+
+.wi-100 {
+  width: 100%;
+}
+
+.cross:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.text-blue {
+  color: #2E5BFF;
+}
+
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #3498db;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 1s linear infinite;
+  position: absolute;
+}
+
+.sidebar-menu {
+  position: absolute;
+  top: 52px;
+  right: 0;
+  z-index: 9999;
+}
+
+.testing-form {
+  position: absolute;
+  top: 0;
+  width: 60%;
+  z-index: 9999;
+}
+
+.checkboxWrapper {
+  width: 24px;
+  float: left;
+}
+
+.custom-checkbox {
+  display: none !important;
+}
+
+.custom-checkbox {
+  background-image: url('/assets/images/checkbox.svg');
+  background-position: -1px;
+  background-size: auto 100%;
+  width: 26px;
+  height: 25px;
+  background-repeat: no-repeat;
+  float: left;
+  cursor: pointer;
+}
+
+.custom-checkbox:checked + .custom-checkbox {
+  background-image: url('/assets/images/checked_checkbox.svg');
+  background-position: left center;
+  background-size: auto 100%;
+  width: 26px;
+  height: 25px;
+  background-repeat: no-repeat;
+  float: left;
+  cursor: pointer;
+
+}
+

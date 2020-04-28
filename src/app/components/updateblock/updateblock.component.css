@@ -1,0 +1,61 @@
+.nav.nav-tabs.nav-fill .nav-link.active, .nav.nav-tabs.nav-fill .nav-link:hover {
+  color: #2E384D;
+  background-color: #EEF3F5;
+  border-bottom: 2px solid #2E5BFF;
+}
+
+.nav.nav-tabs.nav-fill .nav-link {
+  font-size: 18px;
+  font-weight: 600;
+  outline: none;
+  border-radius: 0;
+  color: #8798AD;
+  border-color: transparent;
+  text-decoration: none;
+}
+
+.h5 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.hospital-title, .info-title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.info-title {
+  font-style: italic;
+}
+
+.align-self-center {
+  -ms-flex-item-align: center !important;
+  align-self: center !important;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.bg-white {
+  background-color: #EEF3F5 !important;
+}
+
+.text-danger {
+  color: rgb(51, 172, 46);
+}
+
+.align-self-center {
+  -ms-flex-item-align: center !important;
+  align-self: center !important;
+}
+
+.media-body {
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}

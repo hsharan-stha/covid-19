@@ -1,0 +1,76 @@
+<div class="container-fluid mt-3">
+  <app-map (mapClickEvent)="mapClicked($event)"
+           [globalReport]="globalReport"
+           [information]="information"
+           [report]="report"
+           [loading$]="loading$"
+           [RLoading$]="RLoading$"
+           [showInfo]="showInfo"
+           (crossClickedEvent)="cross($event)"
+           [menuClicked]="menuClicked"
+  ></app-map>
+  <!--  <div *ngIf="(loading$ | async) || (RLoading$ | async)" class="loader"></div>-->
+  <!--  <div class="mt-2 col-lg-3 col-md-6 col-sm-12 information"-->
+  <!--       *ngIf="showInfo && !(loading$ | async) && !(RLoading$! | async)">-->
+  <!--    <div class="rounded bg-bluelight h-100 overflow-hidden">-->
+  <!--      <div class="mt-2 col-lg-12 col-md-12">-->
+  <!--        <div *ngIf="(loading$ | async) || (GRLoading$ | async)" class="loader"></div>-->
+  <!--        <div class="rounded bg-bluelight p-4 h-100">-->
+  <!--          <div class="mb-3 border-bottom pb-2">-->
+  <!--            <div class="d-inline-block wi-100">-->
+  <!--              <div class="h5 mb-0 font-weight-bold head-color">-->
+  <!--                Covid-19 Cases-->
+  <!--                <span class="cross"-->
+  <!--                      (click)="showInfo=!showInfo">X</span>-->
+  <!--              </div>-->
+  <!--            </div>-->
+
+  <!--          </div>-->
+  <!--          <div class="clearfix"></div>-->
+  <!--          <div class="mb-3 row">-->
+  <!--            <div class="col-12">-->
+  <!--              <div-->
+  <!--                class="font-weight-bold h5 head-color">{{information.error !== "Unable to geocode" ? information['address']['country'] : ""}}-->
+  <!--                Update-->
+  <!--              </div>-->
+  <!--              <div class="mb-3 small-xs">-->
+  <!--                ({{information.error !== "Unable to geocode" ? information['address']['country'] : ""}} Govt. reported-->
+  <!--                numbers)-->
+  <!--              </div>-->
+  <!--              <div class="mt-3">Total Confirmed</div>-->
+  <!--              <div-->
+  <!--                class="h3 m-0 font-weight-bold  d-inline-block">{{report['confirmed'] >= 0 ? report['confirmed'] : '. . .'}}</div>-->
+  <!--              <div class="mt-3">Total Recovered</div>-->
+  <!--              <div-->
+  <!--                class="h3 m-0 font-weight-bold d-inline-block ">{{report['recovered'] >= 0 ? report['recovered'] : '. . .'}}</div>-->
+  <!--              <div class="mt-3">Total Deaths</div>-->
+  <!--              <div-->
+  <!--                class="h3 m-0 font-weight-bold d-inline-block">{{report['deaths'] >= 0 ? report['deaths'] : '. . .'}}</div>-->
+  <!--            </div>-->
+  <!--            &lt;!&ndash;            <div class="col-6">&ndash;&gt;-->
+  <!--            &lt;!&ndash;              <div class="font-weight-bold h5">Global Update</div>&ndash;&gt;-->
+  <!--            &lt;!&ndash;              <div class="invisible small-xs mb-3">(WHO reported numbers)</div>&ndash;&gt;-->
+  <!--            &lt;!&ndash;              <div class="invisible">&ndash;&gt;-->
+  <!--            &lt;!&ndash;                <div class="mt-3">Total Tested</div>&ndash;&gt;-->
+  <!--            &lt;!&ndash;                <div class="h3 m-0 font-weight-bold  d-inline-block"> 471,518</div>&ndash;&gt;-->
+  <!--            &lt;!&ndash;              </div>&ndash;&gt;-->
+  <!--            &lt;!&ndash;              <div class="mt-3">Total Confirmed</div>&ndash;&gt;-->
+  <!--            &lt;!&ndash;              <div class="h3 m-0 font-weight-bold  d-inline-block"> {{globalReport['confirmed']}}</div>&ndash;&gt;-->
+  <!--            &lt;!&ndash;              <div class="mt-3">Total Recovered</div>&ndash;&gt;-->
+  <!--            &lt;!&ndash;              <div class="h3 m-0 font-weight-bold d-inline-block ">{{globalReport['recovered']}}</div>&ndash;&gt;-->
+  <!--            &lt;!&ndash;              <div class="mt-3">Total Deaths</div>&ndash;&gt;-->
+  <!--            &lt;!&ndash;              <div class="h3 m-0 font-weight-bold d-inline-block"> {{globalReport['deaths']}}</div>&ndash;&gt;-->
+  <!--            &lt;!&ndash;            </div>&ndash;&gt;-->
+  <!--          </div>-->
+  <!--          &lt;!&ndash;          <small>*Disclaimer: These numbers are obtained from&ndash;&gt;-->
+  <!--          &lt;!&ndash;            <a&ndash;&gt;-->
+  <!--          &lt;!&ndash;              class="text-blue" target="_blank" href="https://coronavirus.jhu.edu/map.html"> Johns Hopkins&ndash;&gt;-->
+  <!--          &lt;!&ndash;              University</a>&ndash;&gt;-->
+  <!--          &lt;!&ndash;            and&ndash;&gt;-->
+  <!--          &lt;!&ndash;            being updated as the numbers from these sources get updated.</small></div>&ndash;&gt;-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+</div>
+
